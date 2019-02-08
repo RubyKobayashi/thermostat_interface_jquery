@@ -19,7 +19,10 @@ thermostat.down();
 $("#current_temp").text(thermostat.getCurrentTemperature());
 });
 
-
+$("#reset").click(function(){
+thermostat.reset();
+$("#current_temp").text(thermostat.getCurrentTemperature());
+});
 
 
 
