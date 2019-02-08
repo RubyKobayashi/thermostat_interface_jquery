@@ -14,7 +14,10 @@ thermostat.up();
 $("#current_temp").text(thermostat.getCurrentTemperature());
 });
 
-
+$("#down").click(function(){
+thermostat.down();
+$("#current_temp").text(thermostat.getCurrentTemperature());
+});
 
 
 
