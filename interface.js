@@ -9,7 +9,10 @@ var thermostat = new Thermostat();
 
 $("#current_temp").text(thermostat.getCurrentTemperature());
 
-
+$("#up").click(function(){
+thermostat.up();
+$("#current_temp").text(thermostat.getCurrentTemperature());
+});
 
 
 
